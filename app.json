@@ -1,0 +1,67 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/invite/invite",
+    "pages/income/income",
+    "pages/headline/headline",
+    
+    "pages/resultDetails/resultDetails",
+    "pages/wallet/wallet",
+    
+    "pages/read/read",
+    "pages/signIn/signIn",
+    "pages/explain/explain",
+    "pages/integral/integral",
+    "pages/assignment/assignment",
+    "pages/IntegralDetail/IntegralDetail",
+    "pages/personal/personal",
+    "pages/editAddress/editAddress",
+    "pages/selectAddress/selectAddress",
+    "pages/searchDetails/searchDetails",
+    "pages/exchange/exchange",
+    "pages/special/special",
+    "pages/classification/classification",
+    "pages/orderConfirm/orderConfirm",
+    "pages/order/order",
+    "pages/orderDetails/orderDetails",
+    "pages/goodsDetails/goodsDetails",
+    "pages/search/search",
+    "pages/mine/mine",
+    "pages/address/address",
+    "pages/newAddress/newAddress",
+    "pages/nickname/nickname",
+    "pages/about/about",
+    "pages/system/setUp",
+    "pages/password/password"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F54D23",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#E94718",
+    "selectedColor": "#E94718",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "iconPath": "image/index/ShoppingMall@2x.png",
+      "selectedIconPath": "image/index/ShoppingMall2@2x.png",
+      "text": "商城"
+      },
+      {
+        "pagePath": "pages/headline/headline",
+        "iconPath": "image/index/headline.png",
+        "selectedIconPath": "image/index/headline2.png",
+        "text": "头条"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "image/index/I@2x.png",
+        "selectedIconPath": "image/index/I2@2x.png",
+        "text": "我的"
+      }]
+  }
+}
