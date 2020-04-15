@@ -1,0 +1,61 @@
+.container {
+    background: url("http://img.laoyouta.com/bg3@3x.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-image {
+    width: 330rpx;
+    height: 330rpx;
+    margin: 150rpx 0 100rpx;
+}
+.code {
+    color: #FECDBE;
+    font-size: 48rpx;
+}
+.input {
+    font-size: 60rpx;
+    color: #AC730E;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 48rpx 0 19rpx;
+}
+.input-left {
+    height: 137rpx;
+    width: 528rpx;
+    background: #F7DEB1;
+    border-radius: 68rpx;
+    line-height: 137rpx;
+    text-align: center;
+    margin-right: 25rpx;
+}
+.input-right {
+    position: relative;
+    align-self: flex-end;
+}
+.input-right view {
+    opacity: 0.5;
+    background: #F7DEB1;
+    width: 135rpx;
+    height: 137rpx;
+    border-top-left-radius: 68rpx;
+    border-bottom-left-radius: 68rpx;
+}
+.input-right image {
+    width: 55rpx;
+    height: 55rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.text {
+    font-size: 28rpx;
+    color: #FECDBE;
+    width: 528rpx;
+    line-height: 1.5;
+}

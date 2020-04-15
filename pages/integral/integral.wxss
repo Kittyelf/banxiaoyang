@@ -1,0 +1,139 @@
+
+.container {
+    background: #fff;
+}
+.line {
+    width: 100%;
+    height: 20rpx;
+    background: #f1f1f1;
+}
+.bg {
+    height: 670rpx;
+     background: url('http://img.laoyouta.com/beijing@3x.png') no-repeat;
+     background-size: 100% 550rpx;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     color: #fff;
+}
+.bg-top {
+    font-size: 100rpx;
+    margin-bottom: 90rpx;
+    position: relative;
+}
+.bg-top image{
+    width:35rpx;
+    height: 38rpx;
+    margin-left: 30rpx;
+}
+.bg-middle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 54rpx;
+}
+.bg-middle image{
+    width: 33rpx;
+    height: 42rpx;
+    margin-right: 15rpx;
+}
+.bg-middle text {
+    font-size: 30rpx;
+}
+.bg-line {
+    width: 1rpx;
+    height: 42rpx;
+    background: #fff;
+    margin: 0 47rpx 0 38rpx;
+}
+.bg-button {
+    width: 165rpx;
+    height: 164rpx;
+    border-radius: 50%;
+    background: #FCAE97;
+    border: 10rpx solid #fff;
+    box-shadow: 0 0 20rpx #FF3030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-button text {
+    font-size: 36rpx;
+    width: 72rpx;
+}
+.bg-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 40rpx;
+}
+.bg-bottom image {
+    width: 36rpx;
+    height: 30rpx;
+    margin-right: 20rpx;
+}
+.bg-bottom text{
+    font-size: 24rpx;
+    color: #999;
+}
+.bg-image {
+    width: 38rpx;
+    height: 38rpx;
+    align-self: flex-end;
+    margin: 40rpx 40rpx 0;
+}
+.bg-image image{
+    width: 38rpx;
+    height: 38rpx;
+}
+.task-main {
+    position: relative;
+}
+.task-title {
+    font-size: 30rpx;
+    color: #333;
+    display: flex;
+    align-items: center;
+    line-height: 4;
+    padding: 0 31rpx;
+}
+.task-title image {
+    width: 28rpx;
+    height: 29rpx;
+    margin-right: 13rpx;
+}
+.task-main-content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2rpx solid #e5e5e5;
+    align-items: center;
+    padding: 28rpx 31rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.task-main-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.task-main-content-left-title {
+    font-size: 30rpx;
+    color: #333;
+    margin-bottom: 9rpx;
+}
+.task-main-content-left-desc {
+    font-size: 24rpx;
+    color: #9b9b9b;
+}
+.task-main-content-right {
+    font-size: 30rpx;
+    color: #F96353;
+}
+.task-main image{
+    width: 120rpx;
+    height: 120rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

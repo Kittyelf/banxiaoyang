@@ -1,0 +1,49 @@
+page {
+    background: #eee;
+}
+.container {
+    padding: 20rpx;
+}
+.main {
+    border-radius: 10rpx;
+    background: #fff;
+    padding: 30rpx;
+}
+.data {
+    border-bottom: 2rpx solid #e8e8e8;
+    font-size: 30rpx;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+}
+.data input {
+    width: 90%;
+}
+.nickname {
+    width: 10%;
+    margin-right: 20rpx;
+    line-height: 120rpx;
+}
+.tip {
+    
+    font-size: 24rpx;
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rpx;
+}
+button {
+    color: #fff;
+    border-radius: 60rpx;
+
+}
+.quit {
+    margin: 150rpx 0 50rpx 0;
+    background: #e94718;
+}
+
+.cancel {
+    color: #e94718;
+    border: 2rpx solid #e94718;
+    background: #fff;
+}

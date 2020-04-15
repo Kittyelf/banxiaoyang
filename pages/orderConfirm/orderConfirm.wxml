@@ -1,0 +1,52 @@
+<view>
+    <view class="container">
+        <view class="main">
+            <view class="address" data-integralgoodsid="{{goodslist.integral_goodsid}}" bindtap="toAddress">
+                <image class="address-dingwei" mode="aspectFit" src="../../image/order/dingwei@3x.png"></image>
+                <view class="address-content">
+                    <view class="address-content-top">
+                        <view class="address-content-top-name">
+                            <text>{{address.address_name}}</text>
+                        </view>
+                        <text>{{address.address_telephone}}</text>
+                    </view>
+                    <view class="address-content-bottom">
+                        <text>{{address.address_province}}{{address.address_city}}{{address.address_area}}{{address.address_detail}}</text>
+                        <image class="address-right" src="../../image/mine/Arrow@3x.png"></image>
+                    </view>
+                </view>
+                <image class="address-top" mode="aspectFit" src="../../image/order/tiaowen.png"></image>
+            </view>
+            <view class="content">
+                <view class="content-title">
+                    <image src="../../image/order/banxiaoyang@3x.png"></image>
+                    <text class="content-title-left">伴小羊旗舰店</text>
+                </view>
+                <view class="content-main">
+                    <view class="content-main-left">
+                        <image src="{{mainImg}}"></image>
+                    </view>
+                    <view class="content-main-right">
+                        <text class="content-main-right-name">{{goodslist.integral_goodsname}}</text>
+                        <text class="content-main-right-price">¥ {{goodslist.integral_price}}</text>
+                        <text class="content-main-right-number">×1</text>
+                    </view>
+                </view>
+                <view class="content-message">
+                    <view class="content-message-text">
+                        <image src="../../image/order/message.png"></image>
+                        <text>买家留言:</text>
+                    </view>
+                    <textarea bindinput="bindinput" bindconfirm="bindconfirm" auto-height></textarea>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="pay">
+        <view class="pay-left">
+            <text class="pay-left-left">实付款：</text>
+            <text class="pay-left-right">¥{{goodslist.integral_price}}</text>
+        </view>
+        <button bindtap="sumbitOrder">提交订单</button>
+    </view>
+</view>

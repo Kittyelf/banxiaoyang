@@ -1,0 +1,129 @@
+@import '/details.wxss';
+page {
+    background: #eee;
+}
+.container {
+    width: 100%;
+    padding: 23rpx 20rpx 0;
+}
+.address {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+    line-height: 2;
+    padding: 50rpx 0 30rpx 20rpx;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%
+}
+.address-dingwei {
+    width: 27rpx;
+    height: 33rpx;
+    margin-right: 22rpx;
+}
+.address-content {
+    width: 90%;
+}
+.address-content-top {
+    font-size: 30rpx;
+    color: #333;
+    display: flex;
+}
+.address-content-top-name {
+    padding-right: 40rpx;
+    max-width: 360rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.address-content-bottom {
+    font-size: 28rpx;
+    color: #9e9e9e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.address-right {
+    width: 12rpx;
+    height: 23rpx;
+    padding-left: 20rpx;
+}
+.address-top {
+    position: absolute;
+    top: 0;
+    height: 20rpx;
+    width: 100%;
+    left: 0;
+}
+.content-title {
+    align-items: center;
+    justify-content: flex-start
+}
+.content-title-left {
+    font-size: 30rpx;
+    color: #333;
+    margin-left: 17rpx;
+}
+.content-title image {
+    width: 32rpx;
+    height: 32rpx;
+}
+.content-main {
+    border-bottom: 0;
+    padding-left: 15rpx;
+}
+.content-button {
+    padding-top: 0;
+}
+.content-message {
+    padding: 10rpx 20rpx 0 15rpx;
+    border-top: 2rpx solid #eee
+}
+.content-message-text {
+    display: flex;
+    font-size:30rpx;
+    color: #333;
+    box-sizing: border-box;
+    align-items: center
+}
+.content-message-text image{
+    width: 32rpx;
+    height: 32rpx;
+    margin: 0 19rpx 0 0
+}
+.content-message textarea {
+    width: 100%;
+    line-height: 2;
+}
+.pay {
+    display: flex;
+    border-radius: 0;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+}
+.pay-left {
+    background: #fff;
+    font-size: 36rpx;
+    height: inherit;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.pay-left-left {
+    color: #2C2C2B;
+}
+.pay-left-right {
+    color: #E94718
+}
+.pay button {
+    height: inherit;
+    color: #fff;
+    background: #E94718;
+    border-radius: 0;
+    width: 40%;
+}

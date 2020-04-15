@@ -1,0 +1,13 @@
+<view class="container">
+    <block wx:for="{{specialList}}">
+        <view class="main">
+            <view class="main-left">
+                <text class="main-left-title">{{item.task_name}}</text>
+                <text class="main-left-time">{{item.detail_time}}</text>
+            </view>
+            <view class="main-right">
+                <text>+{{item.detail_number}}</text>
+            </view>
+        </view>
+    </block>
+</view>

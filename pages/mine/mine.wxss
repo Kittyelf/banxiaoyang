@@ -1,0 +1,133 @@
+.container {
+    width: 100%;
+}
+.bg {
+    background: url('http://img.laoyouta.com/background@3x.png') no-repeat;
+    background-size: 100% 350rpx;
+    height: 440rpx;
+    position: relative;
+}
+.bg-button {
+    width: 267rpx;
+    height: 74rpx;
+    border: 1rpx solid #ebeeef !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color: #fff !important;
+    padding: 0;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+}
+.bg-button image {
+    width: 35rpx;
+    height: 29rpx;
+    vertical-align: middle;
+    margin-right: 10rpx; 
+}
+.bg-bg {
+    width: 100%;
+}
+.bg-content {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 30rpx;
+    align-items: center;
+    padding-top: 50rpx
+}
+.bg-line {
+    width: 2rpx;
+    background: #Fff;
+    height: 47rpx
+}
+.bg-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 24%;
+    line-height: 40rpx
+}
+.bg-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 280rpx;
+    position: absolute;
+    right: 50rpx;
+    bottom: 20rpx;
+}
+.bg-image {
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+}
+.bg-text {
+
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    max-width: 280rpx;
+}
+.bg-edit {
+    width: 36rpx;
+    height: 36rpx;
+    position: absolute;
+    right: 30rpx;
+    bottom: 100rpx
+}
+/**
+* 下方主体
+*/
+
+.data {
+    padding: 0 29rpx;
+    position: relative;
+}
+
+.identical {
+    border-top: 1rpx solid #ddd;
+}
+.main-image {
+    width: 38rpx;
+    height: 38rpx;
+    vertical-align: middle;
+}
+.main-details {
+    font-size: 30rpx;
+    color: #404040;
+    line-height: 90rpx;
+    padding-left: 22rpx;
+}
+.main-arrow {
+    width: 12rpx;
+    height: 23rpx;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-bg {
+    height: 21rpx;
+    background: #f1f1f1;
+}
+.main-hudong {
+    font-size: 26rpx;
+    color: #FF5139;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+/**
+* 共有组件
+*/
+.tabbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff
+}

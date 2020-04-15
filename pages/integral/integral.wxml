@@ -1,0 +1,64 @@
+<view class="container">
+    <view class="bg">
+        <view class="bg-image" bindtap="toExplain">
+            <image src="../../image/integral/wenhao@3x.png"></image>
+        </view>
+        <view class="bg-top">
+            <text>{{sum}}</text>
+            <image src="../../image/integral/jifen@3x.png"></image>
+        </view>
+        <view class="bg-middle">
+            <image src="../../image/integral/jifenzhuangrang@3x.png"></image>
+            <text bindtap="toAssignment">积分转让</text>
+            <view class="bg-line"></view>
+            <image src="../../image/integral/mingxi@3x.png"></image>
+            <text bindtap="toIntegralDetail">积分明细</text>
+        </view>
+        <view class="bg-button"bindtap="toSignIn">
+            <text>查看签到</text>
+        </view>
+        <view class="bg-bottom">
+            <image src="../../image/integral/gonggao@3x.png"></image>
+            <text>连续签到30天，赢1000积分~</text>
+        </view>
+    </view>
+    <view class="line"></view>
+    <view class="task">
+        <view class="task-title">
+            <image src="../../image/integral/renwu@3x.png"></image>
+            <text>新手任务</text>
+        </view>
+        <block wx:for="{{list}}">
+            <view class="task-main" wx:if="{{item.task_type == 1}}">
+                <image wx:if="{{item.is_finish == 1}}" src="../../image/integral/yiwancheng@3x.png"></image>
+                <view class="task-main-content">
+                    <view class="task-main-content-left">
+                        <text class="task-main-content-left-title">{{item.task_name}}</text>
+                        <text class="task-main-content-left-desc">{{item.task_description}}</text>
+                    </view>
+
+                    <text class="task-main-content-right">+{{item.task_addpoint}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="line"></view>
+    <view class="task">
+        <view class="task-title">
+            <image src="../../image/integral/richang@3x.png"></image>
+            <text>日常任务</text>
+        </view>
+        <block wx:for="{{list}}">
+            <view class="task-main" wx:if="{{item.task_type == 2}}">
+                    <image wx:if="{{item.is_finish == 1}}" src="../../image/integral/yiwancheng@3x.png"></image>
+                <view class="task-main-content">
+                    <view class="task-main-content-left">
+                        <text class="task-main-content-left-title">{{item.task_name}}</text>
+                        <text class="task-main-content-left-desc">{{item.task_description}}</text>
+                    </view>
+                    <text class="task-main-content-right">+{{item.task_addpoint}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

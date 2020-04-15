@@ -1,0 +1,13 @@
+<view class="container">
+    <form bindsubmit="formSubmit">
+        <view class="main">
+            <view class="data">
+                <text class="nickname">昵称</text>
+                <input name="nickname" type="text" />
+            </view>
+            <text class="tip">不能超过10个汉字或20个英文，支持中英文、数字、下划线</text>
+        </view>
+        <button formType="submit" class="quit" bindtap="toPersonal">保存</button>
+        <button class="cancel" bindtap="back">取消</button>
+    </form>
+</view>

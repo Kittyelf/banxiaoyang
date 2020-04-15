@@ -1,0 +1,38 @@
+@import '/details.wxss';
+page {
+    background: #eee;
+}
+.container {
+    width: 100%;
+    padding: 23rpx 20rpx 0;
+}
+.nav {
+    font-size: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 40rpx 20rpx;
+    background: #fff;
+    border-top-left-radius: 8rpx;
+    border-top-right-radius: 8rpx;
+    margin-bottom: 20rpx
+}
+.nav-title {
+    position: relative;
+}
+.nav-title-icon {
+    position: absolute;
+    font-size: 18rpx;
+    width: 25rpx;
+    height: 25rpx;
+    background: #E94718;
+    border-radius: 50%;
+    color: #fff;
+    top: -10rpx;
+    right: -20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.active {
+    color: #FF3300;
+}

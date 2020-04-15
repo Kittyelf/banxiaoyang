@@ -1,0 +1,252 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg image {
+    width: 500rpx;
+}
+/**
+*搜索
+**/
+.search {
+    width: 100%;
+    height: 88rpx;
+    background: #F54D23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+.search-form {
+    width: 606rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    background: #E4371B;
+    padding: 0 25rpx;
+    margin-left: 30rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.search-form-image {
+    width: 24rpx;
+    height: 24rpx;
+    line-height: 24rpx;
+    position: absolute;
+    top: 15rpx;
+    left: 20rpx;
+}
+.search-form-image image{
+    width: 24rpx;
+    height: 24rpx;
+    vertical-align: middle;
+    text-align: center;
+}
+.search-form-input {
+    font-size: 28rpx;
+    position: absolute;
+    top: 10rpx;
+    left: 60rpx;
+    color: #ffffff;
+    width: 520rpx
+}
+.search-image {
+    width: 57rpx;
+    height: 46rpx;
+    margin-left: 15rpx;
+}
+/**
+*轮播图
+**/
+.carousel {
+    width: 100%;
+    padding-top: 88rpx;
+    height: 230rpx
+}
+.carousel-image {
+    width: 100%;
+    height: 230rpx;
+}
+/**
+*标签页
+**/
+.label {
+    padding: 25rpx 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:space-around;
+}
+.label view:nth-child(1) {
+    width: 356rpx;
+    height: 132rpx;
+    border-radius: 10rpx;
+}
+.label view:nth-child(1) image{
+    width: 356rpx;
+    height: 132rpx;
+}
+.label view:nth-child(2) {
+    width: 336rpx;
+    height: 167rpx;
+    border-radius: 10rpx;
+}
+
+.label view:nth-child(2) image {
+    width: 336rpx;
+    height: 167rpx;
+}
+.label view:nth-child(3) {
+    width: 336rpx;
+    height: 167rpx;
+    border-radius: 10rpx;
+}
+.label view:nth-child(3) image {
+    width: 336rpx;
+    height: 167rpx;
+}
+.label view:nth-child(4) {
+    width: 356rpx;
+    height: 132rpx;
+    border-radius: 10rpx;
+    align-self: flex-end;
+}
+.label view:nth-child(4) image {
+    width: 356rpx;
+    height: 132rpx;
+}
+/**
+*热门分类
+**/
+.classification-text {
+    font-size: 24rpx;
+    line-height: 92rpx;
+    padding: 0 20rpx;
+    border-left: 9rpx solid #F54D23;
+}
+.classification-main {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40rpx;
+
+}
+.classification-main-content {
+    width: 132rpx;
+    height: 132rpx;
+    background: #EEEEEE;
+    position: relative;
+}
+.classification-main-content-padding {
+    width: 8rpx;
+    height: 8rpx;
+    border-radius: 50%;
+    background: #FB89A1;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.classification-main-content-image{
+    width: 38rpx;
+    height: 38rpx;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+}
+.classification-main-content-image image {
+    width: 38rpx;
+    height: inherit;
+}
+.classification-main-content-text {
+    font-size: 23rpx;
+    color: #333;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+}
+/**
+*热门推荐
+**/
+.recommend {
+    background: #f4f4f4;
+}
+.recommend-text {
+    font-size: 24rpx;
+    line-height: 92rpx;
+    padding: 0 20rpx;
+    border-left: 9rpx solid #28B75B;
+}
+.recommend-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 17rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.recommend-main-content {
+    height: 560rpx;
+    border-bottom: 2rpx solid #eee;
+    display: flex;
+    width: 49%;
+    box-sizing: border-box;
+    flex-direction: column;
+    background: #ffffff;
+    margin-bottom: 10rpx;
+}
+.recommend-main-content-top {
+    width: 100%;
+}
+.recommend-main-content-top image {
+    width: 100%;
+    height: 330rpx;
+}
+.recommend-main-content-desc {
+    font-size: 26rpx;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    height: 80rpx;
+    line-height: 1.6;
+}
+.recommend-main-content-newPrice {
+    font-size: 42rpx;
+    color: #ff3300;
+    margin-top: 30rpx;
+}
+.recommend-main-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22rpx;
+}
+.recommend-main-content-bottom-prevPrice {
+    color: #434342;
+    text-decoration: line-through;
+}
+.recommend-main-content-bottom-buy {
+    color: #bcbcbd;
+}
+.content-bottom {
+    padding: 0 8rpx;
+}
+.tabbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff
+}

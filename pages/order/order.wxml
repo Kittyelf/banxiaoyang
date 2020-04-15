@@ -1,0 +1,97 @@
+<view class="container">
+        <view class="nav">
+                <view class="nav-title {{isShow?'active':''}}" bindtap="whole">
+                    <text>全部</text>
+                </view>
+                <view class="nav-title {{goods_state==='1'&&!isShow?'active':''}}" bindtap="delivery">
+                    <text>待发货</text>
+                    <view class="nav-title-icon" wx:if="{{count.wait_deliver > 0}}">
+                        <text>{{count.wait_deliver}}</text>
+                    </view>
+                </view>
+                <view class="nav-title {{goods_state==='2'&&!isShow? 'active' : ''}}" bindtap="received">
+                    <text>待收货</text>
+                    <view class="nav-title-icon" wx:if="{{count.wait_receipt > 0}}">
+                        <text>{{count.wait_receipt}}</text>
+                    </view>
+                </view>
+                <view class="nav-title {{goods_state==='3'&&!isShow? 'active' : ''}}" bindtap="complete">
+                    <text>已完成</text>
+                </view>
+                <view class="nav-title {{goods_state==='4'&&!isShow? 'active' : ''}}" bindtap="cancel">
+                    <text>已取消</text>
+                </view>
+            </view>
+    <view class="main">
+        <block wx:for="{{orderList}}" wx:key="order_id" wx:if="{{isShow}}">
+            <view class="content">
+                <view class="content-title">
+                    <text class="content-title-left">订单日期： {{item.order_addtime}}</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '1'}}">待发货</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '2'}}">待收货</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '3'}}">交易完成</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '4'}}">已取消</text>
+                </view>
+                <view class="content-main" data-orderid="{{item.order_id}}" bindtap="toOrderDetails">
+                    <view class="content-main-left">
+                        <image src="{{mainImg[index]}}"></image>
+                    </view>
+                    <view class="content-main-right">
+                        <text class="content-main-right-name">{{item.integral_goodsname}}</text>
+                        <text class="content-main-right-price">¥{{item.integral_price}}</text>
+                        <text class="content-main-right-number">×1</text>
+                    </view>
+                </view>
+                <view class="content-button">
+                    <view class="button button-left" data-orderserial="{{item.order_serial}}" bindtap="refund" wx:if="{{item.goods_state === '1'}}">
+                        <text>取消订单</text>
+                    </view>
+                    <view class="button button-left" wx:if="{{item.goods_state === '2'}}">
+                        <text>查看物流</text>
+                    </view>
+                    <view class="button button-right" data-orderid="{{item.order_id}}" bindtap="toCompleted" wx:if="{{item.goods_state === '1' || item.goods_state === '2'}}">
+                        <text>确认收货</text>
+                    </view>
+                    <view class="button button-right" data-orderid="{{item.order_id}}" bindtap="toOrderDetails" wx:if="{{item.goods_state === '3' || item.goods_state === '4'}}">
+                        <text>订单详情</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <block wx:for="{{orderList}}" wx:key="order_id" wx:if="{{item.goods_state === goods_state && !isShow}}">
+            <view class="content" >
+                <view class="content-title">
+                    <text class="content-title-left">订单日期： {{item.order_addtime}}</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '1'}}">待发货</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '2'}}">待收货</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '3'}}">交易完成</text>
+                    <text class="content-title-right" wx:if="{{item.goods_state === '4'}}">已取消</text>
+                </view>
+                <view class="content-main" data-orderid="{{item.order_id}}" bindtap="toOrderDetails" >
+                    <view class="content-main-left">
+                        <image src="{{item.integral_goodsimg}}"></image>
+                    </view>
+                    <view class="content-main-right">
+                        <text class="content-main-right-name">{{item.integral_goodsname}}</text>
+                        <text class="content-main-right-price">¥{{item.integral_price}}</text>
+                        <text class="content-main-right-number">×1</text>
+                    </view>
+                </view>
+                <view class="content-button" >
+                    <view class="button button-left" data-orderserial="{{item.order_serial}}" bindtap="refund" wx:if="{{item.goods_state === '1'}}">
+                        <text>取消订单</text>
+                    </view>
+                    <view class="button button-left" wx:if="{{item.goods_state === '2'}}">
+                        <text>查看物流</text>
+                    </view>
+                    <view class="button button-right" data-orderid="{{item.order_id}}" bindtap="toCompleted" wx:if="{{item.goods_state === '1' || item.goods_state === '2'}}">
+                        <text>确认收货</text>
+                    </view>
+                    <view class="button button-right" data-orderid="{{item.order_id}}" bindtap="toOrderDetails" wx:if="{{item.goods_state === '3' || item.goods_state === '4'}}">
+                        <text>订单详情</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,36 @@
+page {
+    background: #eee;
+}
+.container {
+    padding: 22rpx 20rpx;
+}
+.main:nth-child(odd) {
+    background: #fff;
+}
+.main:nth-child(even) {
+    background: #FCF5F3;
+}
+.main {
+    box-sizing: border-box;
+    padding: 37rpx 53rpx 30rpx 34rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.main-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-left-title {
+    font-size: 30rpx;
+    color: #333;
+    margin-bottom: 20rpx;
+}
+.main-left-time {
+    font-size: 24rpx;
+    color: #9b9b9b;
+}
+.main-right text {
+    font-size: 30rpx;
+    color: #f96353;
+}

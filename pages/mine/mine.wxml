@@ -1,0 +1,78 @@
+<view class="container">
+    <view class="bg">
+        <view class="bg-content" wx:if="{{!isShow}}">
+            <view class="bg-list" bindtap="toIntegral">
+                <text>{{details.sum}}</text>
+                <text>积分</text>
+            </view>
+            <view class="bg-line"></view>
+            <view class="bg-list" bindtap="toExchange">
+                <text>{{details.shop_goods}}+</text>
+                <text>兑换</text>
+            </view>
+            <view class="bg-line"></view>
+            <view class="bg-list" bindtap="toOrder">
+                <text>{{details.order_sum}}</text>
+                <text>订单</text>
+            </view>
+            <view class="bg-line"></view>
+            <view class="bg-list" bindtap="toWallet">
+                <text>{{details.wallet}}</text>
+                <text>钱包</text>
+            </view> 
+        </view>
+        <button wx:if="{{isShow}}" class="bg-button" bindgetuserinfo="shouquan" open-type="getUserInfo" plain>
+            <image src="../../image/mine/wx.png"></image>微信账号登录
+        </button>
+        <view class="bg-img">
+            <image class="bg-image" src="{{avatarUrl}}"></image>
+            <text class="bg-text">{{nickName}}</text>
+        </view> 
+        <image class="bg-edit" bindtap="toPersonal" src="../../image/mine/edit@3x.png"></image>
+    </view>
+    <view class="main">
+        <view class="data" bindtap="toPersonal">
+            <image class="main-image" src="../../image/mine/personaldata@3x.png"></image>
+            <text class="main-details">个人资料</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="data identical" bindtap="toAddress">
+            <image class="main-image" src="../../image/mine/Receivingaddress@3x.png"></image>
+            <text class="main-details">收货地址</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="main-bg"></view>
+        <view class="data" bindtap="toInviteCode">
+            <image class="main-image" src="../../image/mine/Invitation@3x.png"></image>
+            <text class="main-details">邀请/分享有礼</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="data identical" bindtap="toInvite">
+            <image class="main-image" src="../../image/mine/Fillintheinvitationcode@3x.png"></image>
+            <text class="main-details">填写邀请码</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="data identical" bindtap="toIncome">
+            <image class="main-image" src="../../image/mine/income@3x.png"></image>
+            <text class="main-details">收入情况</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="main-bg"></view>
+        <view class="data" bindtap="toService">
+            <image class="main-image" src="../../image/mine/ContactCustomerService@3x.png"></image>
+            <text class="main-details">联系客服</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="data identical" bindtap="toFeedback">
+            <image class="main-image" src="../../image/mine/feedback@3x.png"></image>
+            <text class="main-details">有奖反馈</text>
+            <text class="main-hudong">互动采纳有积分</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="data identical" bindtap="toSystem">
+            <image class="main-image" src="../../image/mine/shezhi.png"></image>
+            <text class="main-details">设置</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,3 @@
+<view class="container">
+    <web-view src="{{article_url}}"></web-view>  
+</view>

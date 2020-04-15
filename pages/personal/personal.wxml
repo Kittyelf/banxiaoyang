@@ -1,0 +1,50 @@
+<view class="container">
+    <view class="main">
+        <view class="data head" bindtap="chooseImage">
+            <text class="main-details">头像</text>
+            <image mode="aspectFill" class="main-head" src="{{sculpture}}"></image>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="data" bindtap="toNickname">
+            <text class="main-details">昵称</text>
+            <text>{{nickname}}</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <view class="data" bindtap="changeSex">
+            <text class="main-details">性别</text>
+            <text wx:if="{{sex === '1'}}">男</text>
+            <text wx:if="{{sex === '0'}}">女</text>
+            <text wx:if="{{sex === ''}}">未知</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <picker mode="date" bindchange="changedate">
+            <view class="data">
+                <text class="main-details">生日</text>
+                <text wx:if="{{date}}">{{date}}</text>
+                <text wx:if="{{!date}}">{{date}}</text>
+                <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+            </view>
+        </picker>
+        <picker bindchange="changecity" mode="region">
+            <view class="data">
+                <text class="main-details">所在地</text>
+                <text>{{city}}</text>
+                <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+            </view>
+        </picker>
+        <view class="data bottom">
+            <text class="main-details">手机号</text>
+            <text>{{phone}}</text>
+            <image class="main-arrow" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+    </view>
+    <view class="bg" wx:if="{{isShow}}"></view>
+    <view class="mask" wx:if="{{isShow}}">
+        <view class="mask-sex">
+            <text class="mask-choice">选择您的性别</text>
+            <text class="sex man" bindtap="choiceMan">男</text>
+            <text class="sex" bindtap="choiceWoman">女</text>
+        </view>
+        <text class="cancel" bindtap="cancel">取消</text>
+    </view>
+</view>

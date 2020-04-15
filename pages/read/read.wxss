@@ -1,0 +1,6 @@
+.fixed {
+    display: fixed;
+    bottom: 0;
+    height: 100rpx;
+    background: #666
+}

@@ -1,0 +1,70 @@
+<view class="container">
+    <view class="bg" bindtap="signIn" catchtouchmove="true" wx:if="{{isShow}}">
+        <image mode="widthFix" src="../../image/index/zu@3x.png"></image>
+    </view>
+    <view class="search">
+        <form class="search-form" bindtap="toSearch">
+            <view class="search-form-image">
+                <image  src="../../image/index/search@3x.png"></image>
+            </view>
+            <input class="search-form-input" disabled type="text" placeholder-style="color: #ffffff" placeholder="搜索商品关键词" />
+        </form>
+        <image class="search-image" style="display: none" src="../../image/index/Customerservice@3x.png"></image>
+    </view>
+    <view>
+        <swiper class="carousel" autoplay interval="2000" indicator-dots indicator-active-color="#ffffff" circular>
+            <block wx:for="{{carousel}}" wx:key="thumb">
+                <swiper-item data-id="{{item.background_link }}" data-acquisitionType="{{item.acquisition_type}}"  bindtap="carousel">
+                    <image class="carousel-image" src="{{item.thumb}}"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="label">
+        <block wx:for="{{tofu}}" wx:key="thumb">
+            <view data-id="{{item.background_link }}" bindtap="toSpecial">
+                <image src="{{item.thumb}}"></image>
+            </view>
+        </block>
+    </view>
+    <view class="segmentingLine"></view>
+    <view class="classification">
+        <text class="classification-text">热门分类</text>
+        <view class="classification-main">
+            <block wx:for="{{person_class}}" wx:key="title">
+                <view class="classification-main-content" bindtap="toClassification" data-id="{{item.id}}" data-title="{{item.title}}">
+                    <view class="classification-main-content-padding"></view>
+                    <view class="classification-main-content-image">
+                        <image src="{{item.thumb}}"></image>
+                    </view>
+                    <text class="classification-main-content-text">{{item.title}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="segmentingLine"></view>
+    <view class="recommend">
+        <text class="recommend-text">热门推荐</text>
+        <view class="recommend-main">
+            <block wx:for="{{specialList}}" wx:key="integral_goodsimg">
+                <view class="recommend-main-content" bindtap="toGoodsDetails" data-id="{{item.integral_goodsid}}">
+                    <view class="recommend-main-content-top">
+                        <image src="{{item.integral_goodsimg}}"></image>
+                    </view>
+                    <view class="content-bottom">
+                        <view class="recommend-main-content-desc">
+                            <text>{{item.integral_goodsname}}</text>
+                        </view>
+                        <view class="recommend-main-content-newPrice">
+                            <text>¥{{item.integral_price}}</text>
+                        </view>
+                        <view class="recommend-main-content-bottom">
+                            <text class="recommend-main-content-bottom-prevPrice">原价:¥{{item.integral_prime}}元</text>
+                            <text class="recommend-main-content-bottom-buy">已有{{item.integral_sales}}人购买</text>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

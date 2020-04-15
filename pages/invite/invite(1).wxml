@@ -1,0 +1,12 @@
+<view class="container" style="height: {{height}}px">
+    <image class="container-image" src="../../image/invite/quan@3x.png"></image>
+    <view class="code">好友邀请码</view>
+    <view class="input">
+        <input class="input-left" type="text" bindinput="bindinput" bindconfirm="bindconfirm" confirm-type="done">{{user_invitecode}}</input>
+        <view class="input-right" bindtap="toMine">
+            <view></view>
+            <image src="../../image/invite/right@3x.png"></image>
+        </view>
+    </view>
+    <view class="text">输入成功后，你的好友会获得积分，还有相应的奖励</view>
+</view>
