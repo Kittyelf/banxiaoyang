@@ -1,0 +1,44 @@
+.container {
+    background: #E8F5FE;
+}
+.aboutUs {
+    width: 100%;
+    height: 442rpx;
+}
+.city {
+    height: 250rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.city image {
+    width: 181rpx;
+    height: 181rpx
+}
+.time {
+    display: flex;
+    justify-content: center;
+}
+.time image {
+    height: 70rpx;
+}
+.content {
+    font-size: 30rpx;
+    line-height: 60rpx;
+    margin-top: 30rpx;
+    padding: 0 50rpx;
+    display: flex;
+    flex-direction: column
+}
+.content-middle {
+    margin: 60rpx 0;
+}
+.QRcode {
+    display: flex;
+    justify-content: center;
+    padding: 60rpx 
+}
+.QRcode image {
+    width: 150rpx;
+    height: 150rpx;
+}

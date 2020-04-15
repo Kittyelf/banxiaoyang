@@ -1,0 +1,19 @@
+<view class="container">
+    <view>
+        <image class="aboutUs" src="../../image/about/about@3x.png"></image>
+        <view class="city">
+            <image src="../../image/about/2016@3x.png"></image>
+        </view>
+        <view class="time">
+            <image mode="aspectFit" src="../../image/about/time@3x.png"></image>
+        </view>
+    </view>
+    <view class="content">
+        <text>老有她是浙江有所为网络科技有限公司旗下的一个核心产品。</text>
+        <text class="content-middle">浙江有所为是一家阿里系创业公司，成立于2016 年9月份，总部位于杭州，致力于通过电商+社区 的模式，构建中老年生活新生态。</text>
+        <text>创始人均来自于华为、阿里等名企。我们致力于 构建中老年新生态：购物、生活、享受、发光、 旅游、投资、互助等，我们的目标是，让咱中老 年老有所为！</text>
+    </view>
+    <view class="QRcode">
+        <image mode="aspectFit" src="../../image/about/code@3x.png"></image>
+    </view>
+</view>
