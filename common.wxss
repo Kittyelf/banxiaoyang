@@ -1,0 +1,116 @@
+/**
+ * 该样式为服饰和积分兑换中的公共样式
+ */
+
+page {
+    background: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    padding: 27rpx 15rpx 0;
+}
+
+.exchange {
+    display: flex;
+    background: #ffffff;
+    border-radius: 10rpx;
+    margin-bottom: 16rpx;
+}
+
+.exchange-image {
+    position: relative;
+    height: 233rpx;
+}
+
+.exchange-image text {
+    position: absolute;
+    font-size: 20rpx;
+    background: #FF0000;
+    color: #ffffff;
+    width: 57rpx;
+    height: 30rpx;
+    text-align: center;
+    border-radius: 10rpx 0 10rpx 0;
+    left: 0
+}
+
+.exchange-image image {
+    width: 236rpx;
+    
+    height: inherit;
+    border-radius: 10rpx;
+}
+
+.exchange-content {
+    margin: 0 20rpx;
+    position: relative;
+}
+
+.exchange-content-desc {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    min-width: 470rpx;
+    min-height:100rpx;
+}
+
+.exchange-content-already {
+    font-size: 22rpx;
+    color: #BCBDBD;
+    position: absolute;
+    top: 50%;
+}
+.exchange-content-city {
+    font-size: 22rpx;
+    color: #BCBDBD;
+    position: absolute;
+    top: 50%;
+    right: 20rpx
+}
+
+.exchange-content-bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 70rpx;
+    position: relative;
+}
+
+.exchange-content-jifen {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 10rpx;
+}
+
+.exchange-content-price {
+    font-size: 42rpx;
+    color: #FF3300;
+}
+
+.exchange-content-right {
+    width: 200rpx;
+    height: 57rpx;
+    position: absolute;
+    right: 20rpx;
+    background: url('http://img.laoyouta.com/1525682880756.png') no-repeat;
+    background-size:100% 100%
+}
+
+.exchange-content-right image {
+    width: 200rpx;
+    height: 57rpx;
+}
+
+.exchange-content-right text {
+    font-size: 27rpx;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}

@@ -1,0 +1,100 @@
+/** 
+ * 该样式为‘我的订单’中的订单信息的公共样式，也用于订单详情 
+ */
+
+.content {
+    background: #ffffff;
+    font-size: 26rpx;
+    margin-bottom: 20rpx
+}
+
+.content-title {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3;
+    padding: 0 20rpx;
+}
+
+.content-title-left {
+    color: #999;
+}
+
+.content-title-right {
+    color: #E94718;
+}
+
+.content-main {
+    padding: 32rpx 0;
+    border-bottom: 2rpx solid #ddd;
+    border-top: 2rpx solid #ddd;
+    display: flex;
+}
+
+.content-main-left {
+    height: 150rpx;
+    margin-right: 22rpx;
+    width: 20%;
+}
+
+.content-main-left image {
+    width: 150rpx;
+    height: 150rpx;
+    background: #999
+}
+
+.content-main-right {
+    position: relative;
+    margin-right: 20rpx;
+    width: 80%;
+}
+
+.content-main-right-name {
+    font-size: 28rpx;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.content-main-right-price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #F54D23;
+    font-size: 36rpx;
+}
+
+.content-main-right-number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #999;
+    font-size: 30rpx;
+}
+
+.content-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40rpx 0;
+}
+
+.button {
+    font-size: 26rpx;
+    border-radius: 26rpx;
+    background: #ffffff;
+    line-height: 2;
+    padding: 0 40rpx;
+    margin: 0 20rpx;
+    position: static
+}
+
+.button-left {
+    color: #4D4D4D;
+    border: 2rpx solid #ddd;
+}
+
+.button-right {
+    color: #E94718;
+    border: 2rpx solid #E94718
+}

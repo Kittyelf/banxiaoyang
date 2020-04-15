@@ -1,0 +1,87 @@
+/** 用于address和selectAddress **/
+
+page {
+    background: #eee;
+}
+.container {
+    width: 100%;
+    padding: 27rpx 20rpx 0;
+    margin-bottom: 110rpx;
+}
+.main {
+    border-radius: 10rpx;
+    background: #ffffff;
+    margin-bottom: 20rpx;
+}
+.top {
+    border-bottom: 2rpx solid #ebebeb;
+    padding: 20rpx 20rpx 30rpx;
+}
+.data {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3;
+    align-items: center
+}
+.data-left {
+    font-size: 30rpx;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.data-right {
+    font-size: 26rpx;
+}
+.address {
+    font-size: 28rpx;
+    color: #333;
+}
+.bottom {
+    display: flex;
+    font-size: 24rpx;
+    color: #7b7b7b;
+    line-height: 3;
+    height: 72rpx;
+}
+.bottom-right {
+    width: 24rpx;
+    height: 24rpx;
+    padding-right: 10rpx;
+}
+.bottom-click {
+    width: 36rpx;
+    height: 36rpx;
+    margin: 0 17rpx;
+}
+.bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newAddr {
+    color: #ffffff;
+    background: #E94718;
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 3;
+}
+.newAddr image {
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 10rpx;
+}
+.none {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32rpx;
+    color: #A7A4A4
+}
+.none image {
+    width: 257rpx;
+    height: 181rpx;
+    margin: 200rpx 0 50rpx;
+}
