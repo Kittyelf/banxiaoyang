@@ -1,0 +1,50 @@
+<view class="container" >
+        <view>
+            <swiper class="top" autoplay interval="4000" indicator-dots indicator-active-color="#ffffff" circular>
+                <block wx:for="{{integral_goodsimg}}" wx:key="index">
+                    <swiper-item>
+                        <image class="bigImage" src="{{item}}"></image>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class="fixedHeight" >
+            <view class="content">
+                <view class="content-title">
+                    <text>{{goodslist.integral_goodsname}}</text>
+                </view>
+                <view class="content-number">
+                    <view>
+                        <text class="rmb">¥</text>
+                        <text class="price">{{goodslist.integral_price}}</text>
+                    </view>
+                    <view>
+                        <text>价格： </text>
+                        <text class="prevPrice">{{goodslist.integral_prime}}元</text>
+                    </view>
+                    <view>
+                        <text>库存： {{goodslist.integral_sales}}件</text>
+                    </view>
+                </view>
+                <view class="specifications" wx:if="{{goodslist.size_remarks}}">
+                    <text class="specifications-title">商品规格</text>
+                    <text>{{goodslist.size_remarks}}</text>
+                </view>
+            </view>
+            <view class="bg" style="margin-top: 50rpx">
+                <text>——  继续拖动，查看图文详情  ——</text>
+            </view>
+        </view>
+        <block wx:for="{{integral_detail}}">
+            <view class="integral_detail">
+                <image mode="widthFix" src="{{item}}"></image>
+            </view>
+        </block>
+        <view class="fixed">
+            <button class="share button"  open-type="share">{{goodslist.share_money}}</button>
+            <view class="buy button" bindtap="toOrderConfirm" data-goodsid="{{goodslist.integral_goodsid}}">
+                <text>立即购买</text>
+            </view>
+        </view>
+    
+</view>

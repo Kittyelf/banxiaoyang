@@ -1,0 +1,22 @@
+<view class="container">
+    <block wx:for="{{specialList}}">
+        <view class="exchange" bindtap="toGoodsDetails" data-id="{{item.integral_goodsid}}">
+            <view class="exchange-image">
+                <image src="{{item.integral_goodsimg}}"></image>
+                <text>自营</text>
+            </view>
+            <view class="exchange-content">
+                <text class="exchange-content-desc">{{item.integral_goodsname}}</text>
+                <text class="exchange-content-already">已兑换{{item.integral_sales}}次</text>
+                <view class="exchange-content-bottom">
+                    <image class="exchange-content-jifen" src="../../image/exchange/jifen@3x.png"></image>
+                    <text class="exchange-content-price">{{item.integral_point}}</text>
+                    <view class="exchange-content-right">
+                        <image src="../../image/exchange/lijiduihuanhuang@3x.png"></image>
+                        <text>{{item.share_money}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

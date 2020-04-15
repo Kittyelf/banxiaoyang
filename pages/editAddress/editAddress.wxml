@@ -1,0 +1,32 @@
+<view>
+    <form bindsubmit="formSubmit">
+        <view class="container">
+            <view class="main">
+                <view class="data">
+                    <text class="data-left">收货人</text>
+                    <input type="text" name="name" placeholder="2-20个字母或汉字" value="{{editAddress.address_name}}" placeholder-style="color: #aaa" />
+                </view>
+                <view class="data">
+                    <text class="data-left">联系电话</text>
+                    <input type="number" name="phone" value="{{editAddress.address_telephone}}" placeholder="手机号码" placeholder-style="color: #aaa" />
+                </view>
+                <picker mode="region" name="city" bindchange="choiceCity">
+                    <view class="data">
+                        <text class="data-left">所在地区</text>
+                        <text class="data-right" wx:if="{{isShow}}">{{editAddress.address_province}},{{editAddress.address_city}},{{editAddress.address_area}}</text>
+                        <text class="data-right" wx:if="{{!isShow}}">{{city}}</text>
+                    </view>
+                </picker>
+                <view class="input">
+                    <textarea type="text" name="address" value="{{editAddress.address_detail}}" placeholder="输入详细的地址：街道、楼号" placeholder-style="color: #aaa" />
+                </view>
+            </view>
+            <view class="default" bindtap="setDefault">
+                <image mode="aspectFill" wx:if="{{address_state == '2'}}" src="../../image/address/grayclick@3x.png"></image>
+                <image mode="aspectFill" wx:if="{{address_state == '1'}}" src="../../image/address/click@3x.png"></image>
+                <text>设为默认</text>
+            </view>
+        </view>
+        <button formType="submit" data-integralgoodsid="{{integral_goodsid}}">保存</button>
+    </form>
+</view>

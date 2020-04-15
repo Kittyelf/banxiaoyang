@@ -1,0 +1,7 @@
+@import '../../common.wxss';
+.exchange-content-right {
+    width: 255rpx;
+}
+.exchange-content-right image {
+    width: 255rpx;
+}

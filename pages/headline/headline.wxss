@@ -1,0 +1,117 @@
+page {
+    background: #f1f1f1;
+}
+.container {
+    background: url('http://img.laoyouta.com/headline.png') no-repeat;
+}
+.container1 {
+    background-size: 100% 350rpx;
+}
+.container2 {
+    background-size: 100% 450rpx;
+}
+.tabbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 45rpx 20rpx;
+    height: 140rpx;
+    box-sizing: border-box;
+}
+.tabbar-list {
+    font-size: 34rpx;
+    color: #ffffff;
+    border-radius: 24rpx;
+    background: #ff6b00;
+    padding: 0 28rpx;
+}
+.active {
+    background: #ff3a13;
+}
+.main-title {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    margin: 0 26rpx 15rpx;
+    border-radius: 12rpx;
+    padding: 25rpx 45rpx;
+    line-height: 1.5;
+    justify-content: space-between
+}
+.main-title-left {
+    display: flex;
+    align-items: center;
+}
+.main-title-search {
+    width: 56rpx;
+    height: 60rpx;
+    margin-right: 36rpx;
+}
+.mian-title-content {
+    display: flex;
+    flex-direction: column;
+}
+.mian-title-content view {
+    color: #191919;
+    font-size: 34rpx;
+}
+.mian-title-content {
+    font-size: 20rpx;
+    color: #191919;
+}
+.main-title-color {
+    color: #f52e24
+}
+.main-title-right {
+    width: 19rpx;
+    height: 36rpx;
+}
+.main-list {
+    margin: 0 26rpx 15rpx;
+    background: #ffffff;
+    padding: 28rpx 28rpx 28rpx 0;
+    display: flex;
+    position: relative;
+    border-radius: 12rpx;
+}
+.main-list-left {
+    height: 193rpx;
+    margin-left: 20rpx
+}
+.main-list-left-top {
+    width: 55rpx;
+    height: 55rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.main-list-left-image {
+    width: 193rpx;
+    height: 193rpx;
+}
+.main-list-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 14rpx;
+    width: 100%;
+}
+.main-list-right-title {
+    font-size: 34rpx;
+    color: #191919;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.main-list-right-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.main-list-right-bottom text {
+    font-size: 20rpx;
+    color: #191919;
+}
+.main-list-right-bottom image {
+    width: 27rpx;
+    height: 27rpx;
+}

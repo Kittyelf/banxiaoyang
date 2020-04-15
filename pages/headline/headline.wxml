@@ -1,0 +1,41 @@
+<view class="container {{isShow? 'container2': 'container1'}}" >
+    <view class="tabbar">
+        <block wx:for="{{classify}}" wx:key="{{item}}">
+            <view class="tabbar-list {{item.type_id == selectedId ? 'active': ''}}" data-index="{{index}}" data-id="{{item.type_id}}" bindtap="change">{{item.type_name}}</view>
+        </block>
+    </view>
+    <view class="main" bindtouchstart="touchstart" bindtouchend="touchend">
+        <view class="main-title" wx:if="{{isShow}}" bindtap="toOther">
+            <view class="main-title-left">
+                <image class="main-title-search" src="../../image/headline/chaxun@3x.png"></image>
+                <view class="mian-title-content">
+                    <view>
+                        <text class="main-title-color">防骗查询</text>
+                        <text>小工具</text>
+                    </view>
+                    <text class="main-title-content-bottom">输入关键词，查真伪</text>
+                </view>
+            </view>
+            <image class="main-title-right" src="../../image/mine/Arrow@3x.png"></image>
+        </view>
+        <block wx:for="{{specialList}}" wx:key="{{item}}">
+            <view class="main-list" bindtap="toRead" data-articleid="{{item.article_id}}">
+                <view class="main-list-left">
+                    <image class="main-list-left-image" mode="aspectFill" src="{{item.article_img}}"></image>
+                    <image wx:if="{{item.is_sort == '1'}}" class="main-list-left-top" src="../../image/headline/top@3x.png"></image>
+                </view>
+                <view class="main-list-right">
+                    <view class="main-list-right-title">
+                        <text>{{item.article_title}}</text>
+                    </view>
+                    <view class="main-list-right-bottom">
+                        <text>{{item.add_time}}</text>
+                        <text>{{item.sum_readed}}阅读</text>
+                        <!-- <text>{{item.sum_point}}点赞</text> -->
+                        <image catchtap="shield" data-index="{{index}}" data-articleid="{{item.article_id}}" src="../../image/headline/pinbi@3x.png"></image>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,39 @@
+<view class="container" style="height: {{height}}px;">
+    <form bindsubmit="formSubmit">
+        <view class="main" style="height: {{mainHeight1}}px">
+            <view class="main-content" >
+                <text>填写手机号：</text>
+                <input type="number" name="phone" bindblur="bindblur"/>
+            </view>
+            <view class="main-content">
+                <text>填写赠送积分：</text>
+                <input type="number" name="integral"/>
+            </view>
+            <button form-type="submit">确认转让</button>
+        </view>
+    </form>
+    <view class="rule" style="height: {{mainHeight2}}px">
+        <view class="rule-title">
+            <text>积分转让规则</text>
+        </view>
+        <view class="rule-content">
+            <text class="rule-content-title">转赠条件：</text>
+            <text class="rule-content-desc">伴小羊APP的注册用户，才可以将您的积分转赠给好友。</text>
+        </view>
+        <view class="rule-content">
+            <text class="rule-content-title">受赠方条件：</text>
+            <text class="rule-content-desc">必须为伴小羊APP的注册用户。</text>
+        </view>
+        <view class="rule-content">
+            <text class="rule-content-title">受赠方条件：</text>
+            <text class="rule-content-desc">必须为伴小羊APP的注册用户。</text>
+        </view>
+        <view class="rule-content">
+            <text class="rule-content-title">转出的积分属性管理</text>
+            <view>
+               <text class="rule-content-title">转赠前后的积分类型及积分有效期不变，转赠积分时</text> 
+               <text class="rule-content-desc">优先转出初晓回馈积分。</text>
+            </view>
+        </view>
+    </view>
+</view>

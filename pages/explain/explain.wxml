@@ -1,0 +1,25 @@
+<view class="container" style="height: {{height}}px">
+    <view class="main">
+        <view class="main-title">
+            <text>浙江有所为网络科技有限公司</text>
+            <text>伴小羊积分使用规则说明</text>
+        </view>
+        <view class="main-content">
+            <text class="main-content-title">1.定义：</text>
+            <text class="main-content-content">积分是用户在伴小羊的部分被鼓励行为，平台给予奖励的一种分值。</text>
+        </view>
+        <view class="main-content">
+            <text class="main-content-title">2.积分产生：</text>
+            <text class="main-content-content">当前，很多行为都能获得积分，比如：</text>
+            <text class="main-content-content">-注册APP-</text>
+            <text class="main-content-content">-第一次领取优惠券-</text>
+            <text class="main-content-content">-分享内容-</text>
+            <text class="main-content-content">-每天阅读内容-</text>
+            <text class="main-content-content">-......-</text>
+        </view>
+        <view class="main-content">
+            <text class="main-content-title">3.使用要求：</text>
+            <text class="main-content-content">积分可以到积分商城购物；可以赠送别人；但积分暂时不可以提现。</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,3 @@
+<view class="container">
+    <web-view src='https://rtd.laoyouta.com/h5/mymoney/index.html?userid={{user_id}}'></web-view>
+</view>

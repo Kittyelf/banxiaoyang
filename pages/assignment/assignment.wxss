@@ -1,0 +1,63 @@
+.container {
+    background: url("http://img.laoyouta.com/beijing2@3x.png") no-repeat;
+    background-size: 100% 100%;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60rpx;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 40rpx;
+}
+.main-content text {
+    font-size: 30rpx;
+    color: #f7deb1;
+}
+.main-content input {
+    width: 380rpx;
+    height: 91rpx;
+    border: 2rpx solid #f7deb1;
+    background: #eb5c2c;
+    border-radius: 45rpx;
+    box-sizing: border-box;
+    padding: 0 40rpx;
+    color: #f7deb1;
+}
+button {
+    width: 100%;
+    background: #f7deb1;
+    color: #ac730e;
+    font-size: 42rpx;
+    border-radius: 45rpx;
+    margin-top: 70rpx;
+}
+.rule {
+    margin: 0 20rpx;
+    background: #f8884b;
+    opacity: 0.8;
+    padding: 55rpx 40rpx;
+    font-size: 27rpx;
+    box-sizing: border-box;
+}
+.rule-title {
+    color: #f1f1f1;
+}
+.rule-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+    line-height: 2
+}
+.rule-content-title {
+    color: #f1f1f1;
+}
+.rule-content-desc {
+    color: #e9e900;
+}

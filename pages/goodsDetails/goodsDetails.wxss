@@ -1,0 +1,131 @@
+page {
+    background: #f4f4f4;
+}
+.top {
+    position: relative;
+    height: 748rpx;
+}
+.bigImage {
+    width: 100%;
+    background: #eee;
+    height: 748rpx;
+}
+.top-details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 187rpx;
+    height: 69rpx;
+    background: rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 34rpx; 
+    border-bottom-left-radius: 34rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.top-details image {
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+.top-details text {
+    font-size: 30rpx;
+    color: #ffffff;
+}
+.bg {
+    color: #999;
+    font-size: 24rpx;
+    display: flex;
+    justify-content: center
+}
+.content {
+    padding: 23rpx 32rpx 22rpx 18rpx;
+    background:#ffffff;
+}
+.content-title {
+    font-size: 28rpx;
+    color: #222;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 10rpx
+}
+
+.content-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+}
+.content-number view {
+    color: #919191;
+    font-size: 26rpx;
+}
+.rmb {
+    margin-right: 11rpx;
+    font-size: 30rpx;
+    color: #ff180d;
+}
+.price {
+    font-size: 48rpx;
+    color: #ff180d;
+}
+.prevPrice {
+    text-decoration:line-through
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+.share {
+    background: #ffffff;
+    color: #FF6326;
+    border-radius: 0;
+}
+.buy {
+    background: #FF6326;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.button {
+    width:50%;
+    line-height: 3
+}
+.integral_detail {
+    width: 100%;
+    padding-bottom: 120rpx;
+}
+.integral_detail image{
+    width: 100%;
+}
+.fixedHeight {
+    position: relative;
+    margin-bottom: 20rpx;
+}
+.specifications {
+    font-size: 24rpx;
+    display: flex;
+    flex-direction: column;
+    margin-top: 19rpx;
+    color: #656565;
+    background: #ffffff;
+    padding: 10rpx;
+    border-top: 2rpx solid #efefef
+}
+.specifications-title {
+    font-size: 28rpx;
+    margin: 17rpx 0 30rpx 0;
+    color: #222;
+}
+/*去除button默认的border*/
+button::after {
+    border: none;
+}
