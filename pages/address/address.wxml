@@ -1,0 +1,40 @@
+
+<view>
+    <view class="container" wx-if="{{addressDetails.length > 0}}">
+        <block wx:for="{{addressDetails}}" wx:key="address_city">
+            <view class="main" >
+                <view class="top">
+                    <view class="data">
+                        <text class="data-left">{{item.address_name}}</text>
+                        <text class="data-right">{{item.address_telephone}}</text>
+                    </view>
+                    <view class="address">
+                        <text class="address-text">{{item.address_province}}{{item.address_city}}{{item.address_area}}{{item.address_detail}}</text>
+                    </view>
+                </view>
+                <view class="bottom">
+                    <view class="bottom-content" wx:if="{{item.address_state == '1'}}">
+                        <image class="bottom-click" src="../../image/address/click@3x.png"></image>
+                        <text>默认地址</text>
+                    </view>
+                    <view class="bottom-content edit" data-addressid="{{item.address_id}}" bindtap="toEditAddress">
+                        <image class="bottom-right" src="../../image/address/bianji@3x.png"></image>
+                        <text>编辑</text>
+                    </view>
+                    <view class="bottom-content clear" bindtap="clearAddress" data-addressid="{{item.address_id}}">
+                        <image class="bottom-right" src="../../image/address/shanchu@3x.png"></image>
+                        <text>删除</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="none" wx-if="{{addressDetails.length == 0}}">
+        <image src="../../image/address/car@3x.png"></image>
+        <text>想要去哪儿啊~~</text>
+    </view>
+    <button class="newAddr" bindtap="toNewAddress">
+        <image src="../../image/address/add.png"></image>
+        <text>新建收货地址</text>
+    </button>
+</view>

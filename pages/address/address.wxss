@@ -1,0 +1,10 @@
+@import '/commonAddress.wxss';
+.edit {
+    position: absolute;
+    right: 20%;
+}
+
+.clear {
+    position: absolute;
+    right: 5%;
+}
